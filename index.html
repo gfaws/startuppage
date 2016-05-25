@@ -1,6 +1,12 @@
 <html>
 	<head>
 		<style>
+	html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 			.top-navigation {
 	background-color: #fff;
 }
@@ -12,20 +18,39 @@
 .logo {
 	margin: 7.25px 7.25px 0px 95px;
 }
-.links {
+ul.links {
 	float:right;
-	padding: 0px 15px;
 }
-.links {
-	margin-top: 5px;
+ul.links {
+	margin: 7px 100px 0px 100px;
 }
-.links li {
+ul.links li {
 	display: inline-block;
 }
-.links li {
+ul.links li {
 	margin: 10;
-	font-size: 1.15em;
-	margin-left: 1.563rem;
+	font-size: 1.10em;
+	margin-left: 1.3rem;
+}
+.top-navigation .links {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+}
+.top-navigation .links .active {
+	color: #4c5058;
+	font-weight: 500;
+}
+li:hover {
+	color: #383838;
+}
+.links .active:hover {
+	color: #000000;
+}
+.top-navigation .links{
+	cursor: hand;
 }
 		</style>
 	</head>
@@ -33,7 +58,7 @@
 		<nav class="top-navigation">
 			<div class="content">
 				<ul class="links">
-					<li>Meet Karma</li>
+					<li class="active">Meet Karma</li>
 					<li>How It Works</li>
 					<li>Store</li>
 					<li>Blog</li>
