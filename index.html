@@ -7,7 +7,7 @@
 *, *:before, *:after {
   box-sizing: inherit;
 }
-			.top-navigation {
+.top-navigation {
 	background-color: #fff;
 }
 .top-navigation > .content {
@@ -53,11 +53,41 @@ li:hover {
 	cursor: hand;
 }
 .introduction {
+	margin-top: -290px;
+}
+.introduction {
 	background-image: url('images/first-background.jpg');
 	background-position: 0 bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 45.938rem;
+	}
+body {
+	margin: 0;
+}
+.introduction h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+.introduction h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+.introduction h1,
+.introduction .content h3 {
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+button {
+	width: 9.688rem;
+	background-color: #f15a29;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+	color: white;
+	font-size: 1.125rem;
 }
 		</style>
 	</head>
@@ -75,7 +105,12 @@ li:hover {
 				<img class="logo" src="images/karma-logo.svg" alt="Karma" width="26">
 			</div>
 		</nav>
-		<section>
+		<section class="introduction">
+			<div class="content">
+				<h1>Introducing Karma</h1>
+				<h3>Bring WiFi with you, everywhere you go.</h3>
+				<button>Learn More</button>
+			</div>
 		</section>
 	</body>
 </html>
