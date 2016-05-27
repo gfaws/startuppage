@@ -1,135 +1,39 @@
 <html>
 	<head>
 		<style>
-	html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-.top-navigation {
-	background-color: #fff;
-}
-.top-navigation > .content {
-	width: 970px;
-	height: 70px;
-	margin: 0 auto;
-}
-.logo {
-	margin: 7.25px 7.25px 0px 95px;
-}
-ul.links {
-	float:right;
-}
-ul.links {
-	margin: 7px 100px 0px 100px;
-}
-ul.links li {
-	display: inline-block;
-}
-ul.links li {
-	margin: 10;
-	font-size: 1.10em;
-	margin-left: 1.3rem;
-}
-.top-navigation .links {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #838994;
-	letter-spacing: 0.03em;
-	-webkit-font-smoothing: antialiased;
-}
-.top-navigation .links {
-	color: #4c5058;
-	font-weight: 500;
-}
-li:hover {
-	color: #383838;
-}
-.links .active:hover {
-	color: #000000;
-}
-.top-navigation .links{
-	cursor: hand;
-}
-.introduction {
-	margin-top: -0.25rem;
-}
-.introduction {
-	overflow: auto;
-}
-.introduction {
-	background-image: url('images/first-background.jpg');
-	background-position: 0 bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 45.938rem;
-}
-body {
-	margin: 0;
-}
-.introduction h1 {
-	margin-top: 17rem;
-	margin-bottom: 1rem;
-	font-size: 3.125rem;
-}
-.introduction h3 {
-	margin-top: 0px;
-	font-size: 1.563rem;
-}
-.introduction h1,
-.introduction .content h3 {
-	color: white;
-	text-align: center;
-	font-weight: 100;
-}
-button {
-	width: 9.688rem;
-	background-color: #f15a29;
-	text-shadow: none;
-	border-style: none;
-	border-radius: 4px;
-	padding: 1rem 1.5rem;
-	color: white;
-	font-size: 1.125rem;
-}
+	html { box-sizing: border-box; }
+body { margin: 0; font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace; }
+*, *:before, *:after { box-sizing: inherit; }
+.logo { margin: 7.25px 7.25px 0px 95px; }
+.nav_wrap { position: fixed; top: 0px; right: 0;  z-index: 9999; }
+.nav_wrap .nav_data{ cursor: hand; }
+.nav_data > .hero_data { width: 970px; height: 70px; margin: 0 auto; }
+.nav_wrap .nav_data{ cursor: hand; }
+ul.nav_data { float:right; margin: 7px 100px 0px 100px;}
+ul.nav_data li { display: inline-block; margin: 10; font-size: 1.10em; margin-left: 1.3rem;}
+.nav_wrap .nav_data { font-family: 'Roboto', sans-serif; font-size: 16px;color: #838994; letter-spacing: 0.03em; -webkit-font-smoothing: antialiased; color: #4c5058; font-weight: 500; }
+li:hover { color: #383838; }
+.nav_data .active:hover { color: #000000; }
+.hero_wrap { margin-top: 15px; overflow: auto; background-image: url('images/first-background.jpg'); background-position: 0 bottom; background-repeat: no-repeat; background-size: cover; height: 45.938rem; }
+.hero_wrap h1 { margin-top: 17rem; margin-bottom: 1rem; font-size: 3.125rem; }
+.hero_wrap h3 { margin-top: 0px; font-size: 1.563rem; }
+.hero_wrap h1,
+.hero_wrap .hero_data h3 { color: white; text-align: center; font-weight: 100; }
+button { width: 9.688rem; background-color: #f15a29; text-shadow: none; border-style: none; border-radius: 4px; padding: 1rem 1.5rem; color: white; font-size: 1.125rem; }
 .btn_wrap{ width: 100%; text-align: center}
 .btn_wrap button{ margin:0 auto;}
-.btn_wrap button:hover {
-	background-color: #C0362C;
-	cursor: hand;
-}
-body {
-	font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-}
-.cases h2 {
-    font-weight: 100;
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 7rem 0rem 0rem 0rem;
-}
-.cases {
-    overflow: auto;
-    text-align: center;
-    width: 100%;
-}
-.devices {
-    width: 200px;
-    margin: 0 auto;
-    display: inline-block;
-}
-.devices {
-	padding-top: 30px;
-}
-.cases .devices {
-	box-sizing: border-box;
-}
+.btn_wrap button:hover { background-color: #C0362C; cursor: hand; }
+.case_wrap h2 { font-weight: 100; font-size: 2.5rem; text-align: center; margin: 7rem 0rem 0rem 0rem; }
+.case_wrap { padding: 5px; text-align: center; }
+.case_data { width: 200px; display: inline-block; padding-top: 30px; text-align: center; }
+.case_wrap .case_data { box-sizing: border-box; }
 		</style>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<nav class="top-navigation">
-			<div class="content">
-				<ul class="links">
+		<img class="logo" src="images/karma-logo.svg" alt="Karma" width="26">
+		<nav class="nav_wrap">
+				<ul class="nav_data">
 					<li class="active">Meet Karma</li>
 					<li>How It Works</li>
 					<li>Store</li>
@@ -137,11 +41,9 @@ body {
 					<li>Help</li>
 					<li>Login</li>
 				</ul>
-				<img class="logo" src="images/karma-logo.svg" alt="Karma" width="26">
-			</div>
 		</nav>
-		<section class="introduction">
-			<div class="content">
+		<section class="hero_wrap">
+			<div class="hero_data">
 				<h1>Introducing Karma</h1>
 				<h3>Bring WiFi with you, everywhere you go.</h3>
 					<div class="btn_wrap">
@@ -149,11 +51,11 @@ body {
 					</div>
 			</div>
 		</section>
-		<section class="cases">
+		<section class="case_wrap">
 			<h2>Everyone needs a little Karma.</h2>
-				<div class="devices"><img class="device1" src="images/icon-devices.svg" alt="icodev" width="125"></div>
-				<div class="devices"><img class="device2" src="images/icon-coffee.svg" alt="coffedev" width="125"></div>
-				<div class="devices"><img class="device3" src="images/icon-refill.svg" alt="icondev" width="125"></div>
+				<div class="case_data"><img class="device1" src="images/icon-devices.svg" alt="icodev" width="125"></div>
+				<div class="case_data"><img class="device2" src="images/icon-coffee.svg" alt="coffedev" width="125"></div>
+				<div class="case_data"><img class="device3" src="images/icon-refill.svg" alt="icondev" width="125"></div>
 		</section>
 	</body>
 </html>
