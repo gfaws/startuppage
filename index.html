@@ -25,9 +25,12 @@ button { width: 9.688rem; background-color: #f15a29; text-shadow: none; border-s
 .btn_wrap button:hover { background-color: #C0362C; cursor: hand; }
 .case_wrap h2 { font-weight: 100; font-size: 2.5rem; text-align: center; margin: 7rem 0rem 0rem 0rem; }
 .case_wrap { padding: 5px; text-align: center; }
-.case_data { width: 200px; display: inline-block; padding-top: 30px; text-align: center; }
+.case_data { width: 200px; display: inline-block; text-align: center; }
 .case_wrap .case_data { box-sizing: border-box; }
-.case_list li{ list-style: none; display: inline; white-space: nowrap; }
+.case_list { width: 50%; margin: 0 auto; overflow: hidden; }
+.case_list li{ display: inline;float: left; margin: 0 auto; width: 33%;padding: 0px; margin-top: 30px; font-size: 25px; }
+.foot_spec hr{ border: 0; border-top: 1px solid #eaebec; margin-top: 6rem; display: block; }
+.foot_spec h5 { text-align: center; font-size: 20px; font-weight: 600; }
 		</style>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
@@ -69,5 +72,29 @@ button { width: 9.688rem; background-color: #f15a29; text-shadow: none; border-s
 				</li>
 			</ul>
 		</section>
+		<footer class="foot_info">
+			<div class="foot_spec">
+					<hr>
+					<h5>Join us on</h5>
+				<ul class="icon_data">
+					<li class="twitter"
+						<i class="fa fa-twitter">
+							::before
+						</i>
+					</li>
+					<li class="facebook">
+						<i class="fa fa-facebook">
+							::before
+						</i>
+					</li>
+					<li class="instagram">
+						<i class="fa fa-instagram">
+							::before;
+						</i>
+					</li>
+				</ul>
+				<span class="copy">&copy Karma Mobility, Inc.</span>
+			</div>
+		</footer>
 	</body>
 </html>
